@@ -1,0 +1,69 @@
+.job-card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.job-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.job-description {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+.job-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+/* Category Styling */
+.job-category {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #4f46e5; /* Light blue color for category */
+    background-color: #e0e7ff; /* Light blue background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/* Salary Styling */
+.job-salary {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #16a34a; /* Green color for salary */
+}
+
+/* Apply Button Styling */
+.job-apply-button {
+    background-color: #4f46e5;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.job-apply-button:hover {
+    background-color: #4338ca;
+}

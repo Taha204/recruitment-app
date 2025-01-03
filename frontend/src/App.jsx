@@ -1,24 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { testConnection } from './api';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './pages/LandingPage';
 
 function App() {
-  const [apiResponse, setApiResponse] = useState('');
-
-  useEffect(() => {
-    const checkApi = async () => {
-      const response = await testConnection();
-      setApiResponse(response.message);
-    };
-
-    checkApi();
-  }, []);
-
-  return (
-    <div className="App">
-      <h1>Test API Connection</h1>
-      <p>{apiResponse}</p>
-    </div>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

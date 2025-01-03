@@ -1,12 +1,12 @@
 <?php
 
 // routes/api.php
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JobController;
 
-Route::get('/test-connection', function () {
-    return response()->json([
-        'success' => true,
-        'message' => 'API connection successful!',
-    ]);
-});
+Route::get('/jobs', [JobController::class, 'index']); // Liste paginée des offres
+Route::get('/jobs/{id}', [JobController::class, 'show']); // Affiche une offre spécifique
+Route::post('/jobs', [JobController::class, 'store']); // Crée une nouvelle offre
+Route::put('/jobs/{id}', [JobController::class, 'update']); // Met à jour une offre existante
+Route::delete('/jobs/{id}', [JobController::class, 'destroy']); // Supprime une offre
+

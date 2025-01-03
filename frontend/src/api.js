@@ -1,13 +1,9 @@
 import axios from 'axios';
+import config from './config'; // Import du fichier de configuration
 
-const API_BASE_URL = 'http://127.0.0.1:8000/api';
+const api = axios.create({
+    baseURL: `${config.API_BASE_URL}/api`, // URL de l'API backend
+    timeout: 10000, // Temps d'attente maximum pour une requête
+});
 
-export const testConnection = async () => {
-  try {
-    const response = await axios.get(`${API_BASE_URL}/test-connection`);
-    return response.data;
-  } catch (error) {
-    console.error('Error connecting to API:', error);
-    return { success: false, message: 'Failed to connect to API' };
-  }
-};
+export default api;

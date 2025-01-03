@@ -1,0 +1,170 @@
+/* General Footer Styling */
+.footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 2rem 1.5rem;
+    font-family: 'Arial', sans-serif;
+    margin-top: 5rem; /* Add margin above the footer */
+}
+  
+  .footer a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #4f46e5; /* Light blue hover */
+  }
+  
+  /* Contact Us Section */
+  .contact-us {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .contact-us h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .contact-form .form-group {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    background-color: #222;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #9ca3af;
+  }
+  
+  .contact-form .submit-btn {
+    background-color: #4f46e5;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form .submit-btn:hover {
+    background-color: #4338ca;
+  }
+  
+  /* Footer Top */
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .footer-logo .logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+  
+  .footer-links a {
+    font-size: 1rem;
+  }
+  
+  /* Divider */
+  hr {
+    border: none;
+    border-top: 1px solid #374151;
+    margin: 1rem 0;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .language-select select {
+    background-color: #222;
+    color: white;
+    border: 1px solid #374151;
+    border-radius: 4px;
+    padding: 0.5rem;
+  }
+  
+  .footer-meta {
+    font-size: 0.9rem;
+    text-align: center;
+    flex: 2;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
